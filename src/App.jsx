@@ -6,7 +6,9 @@ export default function App(){
 
   return ( 
     <div>
-      <center><Button/></center>
+      <center>
+        <Button/>
+      </center>
     </div>
   )
 }
