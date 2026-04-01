@@ -6,9 +6,7 @@ export default function App(){
 
   return ( 
     <div style={{margin:"20px"}}>
-    <Header/>
-    <Button/>
-    <Footer/>
+      <center><Button/></center>
     </div>
   )
 }
