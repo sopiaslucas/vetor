@@ -20,23 +20,6 @@ body {
   text-align: center;
 }
 
-.header {
-  background-color: #ff5c3b;
-  padding: 40px 20px;
-  border-radius: 0 0 10px 10px;
-}
-
-.header h1 {
-  font-size: 48px;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.header p {
-  font-size: 18px;
-  color: #ffe5df;
-}
-
 .lista {
   margin: 20px 0;
   font-size: 18px;
