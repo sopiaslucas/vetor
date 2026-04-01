@@ -1,50 +1,49 @@
 import { useState } from "react";
+import "./styles.css";
 
-export default function Button(){
+export default function Button() {
 
-    // adicionar
-    const [lista, newLista] = useState(["Aluno"])
+  const [lista, newLista] = useState(["Aluno"]);
 
-    function mais (){
-        newLista([...lista, "Aluno novo"])
-    }
+  function mais (){
+    newLista([...lista, "Aluno novo"]);
+  }
 
-    //remover
-    function menos (){
-        newLista(lista.slice(0, -1))
-    }
+  function menos (){
+    newLista(lista.slice(0, -1));
+  }
 
-    //adicionar inicio
-    function addInicio(){
-        
-        const novaLista = [...lista]
-        novaLista.unshift("Aluno (prioridade) ")
-        newLista(novaLista)
-    }
+  function addInicio(){
+    const novaLista = [...lista];
+    novaLista.unshift("Aluno (prioridade)");
+    newLista(novaLista);
+  }
 
-    //remover inicio
-    function delInicio(){
-        const novaLista = [...lista]
-        novaLista.shift("Aluno (prioridade)")
-        newLista(novaLista)
-    }
+  function delInicio(){
+    const novaLista = [...lista];
+    novaLista.shift();
+    newLista(novaLista);
+  }
 
-    //alterar
-    function alterarSegundo( ){
-        const novaLista = [...lista];
-        novaLista[1] = "Transferido";
-        newLista(novaLista)
-    }
+  function alterarSegundo(){
+    const novaLista = [...lista];
+    if(novaLista[1]) novaLista[1] = "Transferido";
+    newLista(novaLista);
+  }
 
-    return(
-        <div> 
-            <p> {JSON.stringify(lista)} </p>
-            <button onClick={mais}> Adicionar em último </button> 
-            <button onClick={menos}> Remover o último </button> 
-            <button onClick={addInicio}> Adicionar no ínicio </button>
-            <button onClick={delInicio}> Remover do ínicio </button> 
-            <button onClick={alterarSegundo}> Alterar Segundo </button>
-        </div>
-    )
+  return(
+    <div className="container">
 
+      <p className="lista">{JSON.stringify(lista)}</p>
+
+      <div className="botoes">
+        <button onClick={mais}>Adicionar em último</button> 
+        <button onClick={menos}>Remover o último</button> 
+        <button onClick={addInicio}>Adicionar no início</button>
+        <button onClick={delInicio}>Remover do início</button> 
+        <button onClick={alterarSegundo}>Alterar Segundo</button>
+      </div>
+
+    </div>
+  );
 }
