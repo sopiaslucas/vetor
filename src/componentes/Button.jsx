@@ -34,6 +34,11 @@ export default function Button() {
   return(
     <div className="container">
 
+      <div className="header">
+        <h1>Sistema de Alunos</h1>
+        <p>Mini Projeto React</p>
+      </div>
+
       <p className="lista">{JSON.stringify(lista)}</p>
 
       <div className="botoes">
@@ -42,6 +47,10 @@ export default function Button() {
         <button onClick={addInicio}>Adicionar no início</button>
         <button onClick={delInicio}>Remover do início</button> 
         <button onClick={alterarSegundo}>Alterar Segundo</button>
+      </div>
+
+      <div className="footer">
+        Projeto React - Infonet
       </div>
 
     </div>
