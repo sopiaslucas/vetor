@@ -12,3 +12,7 @@ export default function App(){
     </div>
   )
 }
+
+
+
+    // <div style={{margin:"20px"}}> <Header/> <center> <Button/> </center> <Footer/> </div>
