@@ -46,11 +46,3 @@ button {
 button:hover {
   background-color: #64748b;
 }
-
-.footer {
-  margin-top: 20px;
-  background-color: #4f7ea8;
-  padding: 15px;
-  border-radius: 6px;
-  color: white;
-}
