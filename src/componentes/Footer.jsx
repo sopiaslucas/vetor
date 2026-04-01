@@ -6,7 +6,11 @@ export default function Footer(){
       padding: '15px',
       borderRadius: '6px',
       textAlign: 'center',
-      marginTop: '20px'}}>
+      marginTop: '30px',
+      //position: 'fixed',
+      bottom: '0', 
+      width: '100%'
+      }}>
       <p>Projeto React - Infonet</p>
     </header>
     )

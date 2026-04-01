@@ -1,3 +1,4 @@
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -108,4 +109,22 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+
+li {
+  background-color: #4f7ea8;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  color: black
+}
+
+ul{
+  background-color: #f2e2df;
+  margin: 30px 10px 20px;
+  padding: 30px;
+  border-radius: 6px;
 }

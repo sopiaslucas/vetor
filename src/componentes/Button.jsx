@@ -3,7 +3,7 @@ import "./styles.css";
 
 export default function Button() {
 
-  const [lista, newLista] = useState(["Aluno"]);
+  const [lista, newLista] = useState(["Aluno", " Aluno"]);
 
   function mais (){
     newLista([...lista, "Aluno novo"]);
@@ -31,15 +31,26 @@ export default function Button() {
     newLista(novaLista);
   }
 
+      //<p className="lista">{JSON.stringify(lista)}</p>
   return(
+    
     <div className="container">
 
-      <div className="header">
-        <h1>Sistema de Alunos</h1>
-        <p>Mini Projeto React</p>
-      </div>
+  
+        <div style={{
+          backgroundColor: '#ffffffff',
+          margin: '30px 10px 30px',
+          padding: '30px',
+          borderRadius: '6px',
+        }}id="nominho" >
+          <h2 style={{color: '#000'}}> Lista de Alunos </h2>
+        <ul >
+            {lista.map((nome, index) => (
+                <li key={index} type="none">{nome}</li>
+            ))}
+        </ul>
+        </div>
 
-      <p className="lista">{JSON.stringify(lista)}</p>
 
       <div className="botoes">
         <button onClick={mais}>Adicionar em último</button> 
@@ -49,9 +60,6 @@ export default function Button() {
         <button onClick={alterarSegundo}>Alterar Segundo</button>
       </div>
 
-      <div className="footer">
-        Projeto React - Infonet
-      </div>
 
     </div>
   );
