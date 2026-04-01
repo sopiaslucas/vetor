@@ -5,7 +5,7 @@ import Button from "./componentes/Button";
 export default function App(){
 
   return ( 
-    <div style={{margin:"20px"}}>
+    <div>
       <center><Button/></center>
     </div>
   )
